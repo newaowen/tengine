@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN_DIR	Makefile	/^BIN_DIR=bin$/;"	m
+BIN_DIR	src/Makefile	/^BIN_DIR=..\/bin\/$/;"	m
+BUILD_DIR	Makefile	/^BUILD_DIR=build$/;"	m
+BUILD_DIR	src/Makefile	/^BUILD_DIR=..\/build\/$/;"	m
+CC	Makefile	/^CC=g++$/;"	m
+CC	src/Makefile	/^CC=g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -o3$/;"	m
+CFLAGS	src/Makefile	/^CFLAGS=-Wall -O3$/;"	m
+INCLUDE_DIR	Makefile	/^INCLUDE_DIR=-Iinclude $/;"	m
+INCLUDE_DIR	src/Makefile	/^INCLUDE_DIR=-Iinclude $/;"	m
+INSTALL	src/Makefile	/^INSTALL=install$/;"	m
+LIBS	Makefile	/^LIBS=-lSDL -lSDLmain$/;"	m
+LIBS	src/Makefile	/^LIBS=-lSDL -lSDLmain$/;"	m
+OBJS	src/Makefile	/^OBJS=$(patsubst %.cpp, %.o, $(SOURCES))$/;"	m
+SDLWrapper	src/SDLWrapper.cpp	/^SDLWrapper::SDLWrapper(void) {$/;"	f	class:SDLWrapper
+SDLWrapper	src/SDLWrapper.h	/^class SDLWrapper {$/;"	c
+SOURCES	src/Makefile	/^SOURCES=$(wildcard *.cpp)$/;"	m
+SRC_DIR	Makefile	/^SRC_DIR=src$/;"	m
+TARGET	src/Makefile	/^TARGET=tengine $/;"	m
+Vector3	src/Vector3.h	/^    Vector3() {}$/;"	f	class:Vector3
+Vector3	src/Vector3.h	/^    Vector3(const Vector3 &v) : x(v.x), y(v.y), z(v.z) {}$/;"	f	class:Vector3
+Vector3	src/Vector3.h	/^    Vector3(float nx, float ny, float nz) : x(nx), y(ny), z(nz) {}$/;"	f	class:Vector3
+Vector3	src/Vector3.h	/^class Vector3 {$/;"	c
+_SDLWRAPPER_	src/SDLWrapper.h	4;"	d
+_VECTOR3_	src/Vector3.h	19;"	d
+cleanup	src/SDLWrapper.cpp	/^int SDLWrapper::cleanup() {$/;"	f	class:SDLWrapper
+crossProduct	src/Vector3.cpp	/^Vector3 crossProduct(const Vector3 &a, const Vector3 &b) {$/;"	f
+distance	src/Vector3.cpp	/^float distance(const Vector3 &a, const Vector3 &b) {$/;"	f
+eventHandler	src/SDLWrapper.cpp	/^void SDLWrapper::eventHandler(SDL_Event* event) {$/;"	f	class:SDLWrapper
+init	src/SDLWrapper.cpp	/^bool SDLWrapper::init() {$/;"	f	class:SDLWrapper
+main	src/main.cpp	/^int main(int argc, char* args[]) {$/;"	f
+normalize	src/Vector3.cpp	/^void Vector3::normalize() {$/;"	f	class:Vector3
+operator !=	src/Vector3.cpp	/^bool Vector3::operator !=(const Vector3 &v) const {$/;"	f	class:Vector3
+operator *	src/Vector3.cpp	/^Vector3 Vector3::operator *(float a) const {$/;"	f	class:Vector3
+operator *	src/Vector3.cpp	/^Vector3 operator *(float k, const Vector3 &v) {$/;"	f
+operator *	src/Vector3.cpp	/^float Vector3::operator *(const Vector3 &v) const {$/;"	f	class:Vector3
+operator *=	src/Vector3.cpp	/^Vector3& Vector3::operator *=(float a) const {$/;"	f	class:Vector3
+operator +	src/Vector3.cpp	/^Vector3 Vector3::operator +(const Vector3 &v) const {$/;"	f	class:Vector3
+operator +=	src/Vector3.cpp	/^Vector3& Vector3::operator +=(const Vector3 &v) const {$/;"	f	class:Vector3
+operator -	src/Vector3.cpp	/^Vector3 Vector3::operator -() const {$/;"	f	class:Vector3
+operator -	src/Vector3.cpp	/^Vector3 Vector3::operator -(const Vector3 &v) const {$/;"	f	class:Vector3
+operator -=	src/Vector3.cpp	/^Vector3& Vector3::operator -=(const Vector3 &v) const {$/;"	f	class:Vector3
+operator /	src/Vector3.cpp	/^Vector3 Vector3::operator \/(float a) const {$/;"	f	class:Vector3
+operator /=	src/Vector3.cpp	/^Vector3& Vector3::operator \/=(float a) const {$/;"	f	class:Vector3
+operator =	src/Vector3.cpp	/^Vector3 &Vector3::operator =(const Vector3 &v) {$/;"	f	class:Vector3
+operator ==	src/Vector3.cpp	/^bool Vector3::operator ==(const Vector3 &v) const {$/;"	f	class:Vector3
+render	src/SDLWrapper.cpp	/^int SDLWrapper::render() {$/;"	f	class:SDLWrapper
+run	src/SDLWrapper.cpp	/^int SDLWrapper::run() {$/;"	f	class:SDLWrapper
+runFlag	src/SDLWrapper.h	/^	bool runFlag;$/;"	m	class:SDLWrapper
+surface	src/SDLWrapper.h	/^	SDL_Surface* surface;$/;"	m	class:SDLWrapper
+vectorMag	src/Vector3.cpp	/^float vectorMag(const Vector3 &v) {$/;"	f
+x	src/Vector3.h	/^    float x, y, z;$/;"	m	class:Vector3
+y	src/Vector3.h	/^    float x, y, z;$/;"	m	class:Vector3
+z	src/Vector3.h	/^    float x, y, z;$/;"	m	class:Vector3
+zero	src/Vector3.cpp	/^void Vector3::zero() {$/;"	f	class:Vector3
+~SDLWrapper	src/SDLWrapper.cpp	/^SDLWrapper::~SDLWrapper(void) {$/;"	f	class:SDLWrapper

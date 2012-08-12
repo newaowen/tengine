@@ -1,24 +1,18 @@
 #compile tool
+SHELL:=/bin/bash
+
 CC=g++
 
-INCLUDE_DIR=-linclude 
+INCLUDE_DIR=-Iinclude 
 LIBS=-lSDL -lSDLmain
-
-TARGET=tenine
-
 CFLAGS=-Wall -o3
-#CFLAGS=-Wall -ansi -pedantic -g -O2
-#%.o:%.cpp
-#    $(CC) -c $(FLAGS) $(INCLUDE_DIR) $< -o $@
 
-EXEC=tengine
-OBJS=SDLWrapper.o main.o
+SRC_DIR=src
+BUILD_DIR=build
+BIN_DIR=bin
 
-all : $(EXEC)
+all : subsystem 
+subsystem:
+	@cd $(SRC_DIR) && $(MAKE)	
 
-$(EXEC) : $(OBJS)
-	$(CC) -o $@ $(OBJS) $(LIBS)
-                         
-%.o : %.cpp
-	$(CC) -c $(CFLAGS) $^ -o $@
 
