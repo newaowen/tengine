@@ -1,4 +1,10 @@
 tengine
 =======
 
-a simple software graphic engine
+一个简单的软渲染引擎
+
+当前只完成最基本的矩阵基础运算部分....
+
+=======
+
+I ll be back
